@@ -1,0 +1,28 @@
+{
+    "name": "chaos-ws/laravel-chaos-broadcaster",
+    "description": "Chaos Websocket broadcaster",
+    "authors": [
+        {
+            "name": "Bohdan Vico",
+            "email": "vicobohdan@gmail.com"
+        }
+    ],
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+    	"psr-4": {
+    	    "ChaosWs\\LaravelChaosBroadcaster\\": "src/"
+    	}
+    },
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": "^7.0|^8.0|^9.0|^10.0",
+        "pusher/pusher-php-server": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChaosWs\\LaravelChaosBroadcaster\\ServiceProvider"
+            ]
+        }
+    }
+}
